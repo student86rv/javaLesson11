@@ -5,13 +5,13 @@ import java.util.Calendar;
 
 public class Person {
 	
-	String firstName;
-	String lastName;
-	String fatherName;
-	String fullName;
+	private String firstName;
+	private String lastName;
+	private String fatherName;
+	private String fullName;
 	
-	String[] names = new String[3];
-	int[] birthDate = new int[3];
+	private String[] names = new String[3];
+	private int[] birthDate = new int[3];
 			
 	public Person(String lastName, String firstName, String fatherName, int[] birthDate) {
 		this.lastName = lastName;
@@ -54,7 +54,11 @@ public class Person {
 		}
 		return age;
 	}
-		
+
+	public String getLastName() {
+		return lastName;
+	}
+
 	public String toString() {
 		return "Person{" +
 		" " + lastName +
